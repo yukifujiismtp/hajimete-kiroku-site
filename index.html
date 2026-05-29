@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajimetekiroku - Official Site</title>
+    <style>
+        :root {
+            --primary: #0071e3;
+            --text: #1d1d1f;
+            --text-secondary: #86868b;
+            --bg: #f5f5f7;
+            --card-bg: #ffffff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            padding: 0 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #0071e3, #42a5f5);
+            border-radius: 26px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(0,113,227,0.25);
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+        .tagline {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 550px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+        .section {
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        }
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+        @media (min-width: 600px) {
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .feature-card {
+            background: var(--bg);
+            padding: 24px;
+            border-radius: 16px;
+            transition: transform 0.2s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-2px);
+        }
+        .feature-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            color: var(--primary);
+        }
+        .feature-card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+        details {
+            cursor: pointer;
+        }
+        details summary {
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 8px 0;
+            color: var(--text);
+            outline: none;
+            user-select: none;
+        }
+        .policy-content {
+            margin-top: 24px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            border-top: 1px solid #e5e5e7;
+            padding-top: 24px;
+        }
+        .policy-content h3 {
+            font-size: 1.1rem;
+            margin: 20px 0 8px;
+            color: var(--text);
+        }
+        .policy-content p {
+            margin-bottom: 12px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        footer a, .policy-content a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        footer a:hover, .policy-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon">H</div>
+            <h1>Hajimetekiroku</h1>
+            <p class="tagline">Simple records for your daily life. Keep track of what matters effortlessly.</p>
+        </header>
 
+        <section class="section">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Easy to Record</h3>
+                    <p>No complicated setups. Start logging your important moments instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Clean Design</h3>
+                    <p>A minimalist and intuitive user interface designed for quick and seamless access.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Stay Consistent</h3>
+                    <p>Helping you build and maintain your daily habits with total ease.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Privacy First</h3>
+                    <p>Your data stays safely on your own device. No tracking, no unwanted stress.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <details>
+                <summary>Privacy Policy</summary>
+                <div class="policy-content">
+                    <p>"Hajimetekiroku" (hereinafter referred to as "the App") values the protection of user personal information. This Privacy Policy explains how information is handled within the App.</p>
+                    
+                    <h3>1. Collection of Personal Information</h3>
+                    <p>The App does not collect, store, or transmit any personally identifiable information (such as name, email address, or phone number). All data entered into the App is stored solely on the user's device (or in the cloud storage configured by the user).</p>
+                    
+                    <h3>2. Analysis of Usage</h3>
+                    <p>To improve our services, the App may analyze non-personally identifiable statistical usage data (such as crash reports). This data is anonymized and cannot be used to identify any individual user.</p>
+                    
+                    <h3>3. Compliance with Laws</h3>
+                    <p>The App complies with all applicable laws and regulations of Japan.</p>
+                    
+                    <h3>4. Contact Information</h3>
+                    <p>For any inquiries regarding this policy or the App, please contact us at:<br>
+                    <a href="mailto:yuuf0118@hotmail.com">yuuf0118@hotmail.com</a></p>
+                    
+                    <p style="margin-top: 24px;"><strong>Effective Date:</strong> March 17, 2026</p>
+                </div>
+            </details>
+        </section>
+
+        <footer>
+            <p>Support: <a href="mailto:yuuf0118@hotmail.com">Contact Us</a></p>
+            <p style="margin-top: 12px;">&copy; 2026 Hajimetekiroku. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
